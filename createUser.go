@@ -1,9 +1,15 @@
 package createUser
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func (string data) printData() {
-	fmt.Print(data)
+type User struct {
+	Name string
+}
+
+func PrintCreateUserName(userData User) {
+	fmt.Print(userData.Name)
+}
+
+func (userData *User) GetName() string {
+	return userData.Name
 }
