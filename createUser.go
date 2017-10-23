@@ -8,7 +8,7 @@ type User struct {
 
 //  funtion available from createUser //
 func PrintCreateUserName(userData User) {
-	fmt.Println(userData.Name + "\n")
+	fmt.Println(userData.Name)
 }
 
 // method for the "User type" //
